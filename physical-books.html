@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Physical Books | Campus Resource Hub</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="upload-resource.html" class="nav-item">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="my-uploads.html" class="nav-item">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="physical-books.html" class="nav-item active">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report a Resource
+            </a>
+
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">K</div>
+
+                    <div>
+                        <strong>Khadim Hussain</strong>
+                        <small>BS Software Engineering</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Physical Books Page -->
+        <div class="page-content physical-books-page">
+
+            <!-- Heading -->
+            <section class="physical-heading">
+
+                <h1>Physical Books</h1>
+
+                <p>
+                    Find physical copies of books shared by your fellow students.
+                    You can request to borrow and arrange pickup.
+                </p>
+
+            </section>
+
+            <!-- Filters -->
+            <section class="physical-filters">
+
+                <div class="physical-search">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search by book title, author, or keyword..."
+                    >
+                </div>
+
+                <select>
+                    <option>All Departments</option>
+                    <option>Computer Science</option>
+                    <option>Software Engineering</option>
+                    <option>Mathematics</option>
+                    <option>Electrical Engineering</option>
+                    <option>Business Administration</option>
+                </select>
+
+                <select>
+                    <option>All Semesters</option>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </select>
+
+                <select>
+                    <option>All Conditions</option>
+                    <option>Like New</option>
+                    <option>Good Condition</option>
+                    <option>Used</option>
+                </select>
+
+                <select>
+                    <option>Newest First</option>
+                    <option>Oldest First</option>
+                    <option>Title A-Z</option>
+                </select>
+
+            </section>
+
+            <!-- Results and View Options -->
+            <div class="physical-results">
+
+                <span>Showing <strong>12</strong> results</span>
+
+                <div class="physical-view-controls">
+                    <button class="physical-view-button active" aria-label="Grid view">
+                        ▦
+                    </button>
+
+                    <button class="physical-view-button" aria-label="List view">
+                        ☷
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Books Grid -->
+            <section class="physical-books-grid">
+
+                <!-- Book 1 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-dsa">
+                            <small>Reference</small>
+                            <strong>Data<br>Structures<br>and Algorithms</strong>
+                            <span>◆</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Data Structures and Algorithms</h3>
+
+                            <div class="book-tags">
+                                <span>Computer Science</span>
+                                <span>Semester 3</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Ali Raza
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 20, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Main Library)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge good">Good Condition</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 2 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-os">
+                            <small>Reference</small>
+                            <strong>Operating<br>System</strong>
+                            <span>⚙</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Operating System Concepts</h3>
+
+                            <div class="book-tags">
+                                <span>Computer Science</span>
+                                <span>Semester 4</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Imran Ali
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 15, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Hostel A)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge like-new">Like New</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 3 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-network">
+                            <small>Department</small>
+                            <strong>Computer<br>Networks</strong>
+                            <span>◉</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Computer Networks</h3>
+
+                            <div class="book-tags">
+                                <span>Computer Science</span>
+                                <span>Semester 5</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Hira Memon
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 15, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (CS Block)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge good">Good Condition</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 4 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-algebra">
+                            <small>Introduction to</small>
+                            <strong>Linear<br>Algebra</strong>
+                            <span>◆</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Linear Algebra</h3>
+
+                            <div class="book-tags">
+                                <span>Mathematics</span>
+                                <span>Semester 1</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Fatima Ali
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 8, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Hostel B)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge used">Used</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 5 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-physics">
+                            <small>Science</small>
+                            <strong>Physics</strong>
+                            <span>◎</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>University Physics with Modern Physics</h3>
+
+                            <div class="book-tags">
+                                <span>Physics</span>
+                                <span>Semester 2</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Imran Ali
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 5, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Science Block)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge good">Good Condition</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 6 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-chemistry">
+                            <small>Reference</small>
+                            <strong>Organic<br>Chemistry</strong>
+                            <span>●</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Organic Chemistry</h3>
+
+                            <div class="book-tags">
+                                <span>Chemistry</span>
+                                <span>Semester 4</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Sara Memon
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 3, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Hostel A)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge like-new">Like New</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 7 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-database">
+                            <small>Reference</small>
+                            <strong>Database<br>System<br>Concepts</strong>
+                            <span>▤</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Database System Concepts</h3>
+
+                            <div class="book-tags">
+                                <span>Computer Science</span>
+                                <span>Semester 3</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Hira Memon
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Oct 1, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (CS Block)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge used">Used</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Book 8 -->
+                <article class="physical-book-card">
+
+                    <div class="physical-book-main">
+
+                        <div class="physical-cover book-math">
+                            <small>Mathematics</small>
+                            <strong>Discrete<br>Mathematics</strong>
+                            <span>◆ ◆</span>
+                        </div>
+
+                        <div class="physical-book-details">
+
+                            <h3>Discrete Mathematics</h3>
+
+                            <div class="book-tags">
+                                <span>Mathematics</span>
+                                <span>Semester 2</span>
+                            </div>
+
+                            <div class="book-detail">
+                                <span>♙</span> Zainab Shah
+                            </div>
+
+                            <div class="book-detail">
+                                <span>▣</span> Sep 25, 2026
+                            </div>
+
+                            <div class="book-location">
+                                <span>⌖</span>
+                                On-campus (Main Library)
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="book-card-footer">
+                        <span class="condition-badge good">Good Condition</span>
+
+                        <div class="book-actions">
+                            <a href="#">◉ View Details</a>
+                            <a href="#" class="borrow-button">▤ Request to Borrow</a>
+                        </div>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Pagination -->
+            <nav class="physical-pagination">
+
+                <a href="#" class="physical-page-arrow">‹</a>
+                <a href="#" class="physical-page-number active">1</a>
+                <a href="#" class="physical-page-number">2</a>
+                <a href="#" class="physical-page-number">3</a>
+                <a href="#" class="physical-page-arrow">›</a>
+
+            </nav>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

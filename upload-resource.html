@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Resource | Campus Resource Hub</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="upload-resource.html" class="nav-item active">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report a Resource
+            </a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">K</div>
+
+                    <div>
+                        <strong>Khadim Hussain</strong>
+                        <small>BS Software Engineering</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Upload Page -->
+        <div class="page-content upload-page">
+
+            <div class="upload-heading">
+                <h1>Upload Resource</h1>
+
+                <p>
+                    Share academic resources with your fellow students.
+                    Your upload will be reviewed by the admin before it
+                    becomes available to others.
+                </p>
+            </div>
+
+            <div class="upload-layout">
+
+                <!-- Main Upload Form -->
+                <section class="panel upload-form-panel">
+
+                    <form>
+
+                        <!-- Resource Details -->
+                        <div class="form-section">
+
+                            <h2 class="form-section-heading">
+                                <span>▤</span>
+                                Resource Details
+                            </h2>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+                                    <label for="title">
+                                        Title <span class="required">*</span>
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="title"
+                                        placeholder="Enter resource title"
+                                        required
+                                    >
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="category">
+                                        Category <span class="required">*</span>
+                                    </label>
+
+                                    <select id="category" required>
+                                        <option value="">Select category</option>
+                                        <option>Books</option>
+                                        <option>Lecture Notes</option>
+                                        <option>Past Papers</option>
+                                        <option>Assignments</option>
+                                        <option>Slides</option>
+                                        <option>Lab Manuals</option>
+                                        <option>Presentations</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="department">
+                                        Department <span class="required">*</span>
+                                    </label>
+
+                                    <select id="department" required>
+                                        <option value="">Select department</option>
+                                        <option>Computer Science</option>
+                                        <option>Software Engineering</option>
+                                        <option>Electrical Engineering</option>
+                                        <option>Business Administration</option>
+                                        <option>Mathematics</option>
+                                        <option>Education</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="semester">
+                                        Semester <span class="required">*</span>
+                                    </label>
+
+                                    <select id="semester" required>
+                                        <option value="">Select semester</option>
+                                        <option>Semester 1</option>
+                                        <option>Semester 2</option>
+                                        <option>Semester 3</option>
+                                        <option>Semester 4</option>
+                                        <option>Semester 5</option>
+                                        <option>Semester 6</option>
+                                        <option>Semester 7</option>
+                                        <option>Semester 8</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="resource-type">
+                                        Resource Type <span class="required">*</span>
+                                    </label>
+
+                                    <select id="resource-type" required>
+                                        <option value="">Select resource type</option>
+                                        <option>PDF Document</option>
+                                        <option>Word Document</option>
+                                        <option>PowerPoint Presentation</option>
+                                        <option>Excel File</option>
+                                        <option>Image</option>
+                                        <option>Compressed File</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group description-group">
+                                    <label for="description">
+                                        Description (Optional)
+                                    </label>
+
+                                    <textarea
+                                        id="description"
+                                        rows="4"
+                                        maxlength="500"
+                                        placeholder="Write a short description about this resource..."
+                                    ></textarea>
+
+                                    <small class="character-count">0/500</small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Upload File -->
+                        <div class="form-section file-section">
+
+                            <h2 class="form-section-heading">
+                                <span>♧</span>
+                                Upload File <span class="required">*</span>
+                            </h2>
+
+                            <label class="file-drop-area" for="resource-file">
+
+                                <div class="upload-cloud">⇧</div>
+
+                                <strong>Drag and drop your file here</strong>
+
+                                <span>or click to browse</span>
+
+                                <small>
+                                    Supported formats: PDF, DOC, DOCX, PPT,
+                                    PPTX, XLS, XLSX, ZIP, JPG, JPEG, PNG
+                                    (Max size: 20MB)
+                                </small>
+
+                                <input
+                                    type="file"
+                                    id="resource-file"
+                                    accept=".pdf,.doc,.docx,.ppt,.pptx,.xls,.xlsx,.zip,.jpg,.jpeg,.png"
+                                    hidden
+                                >
+
+                            </label>
+
+                            <!-- Selected File Preview -->
+                            <div class="selected-file">
+
+                                <div class="selected-file-icon">PDF</div>
+
+                                <div class="selected-file-info">
+                                    <strong>Data Structures and Algorithms.pdf</strong>
+                                    <span>2.4 MB</span>
+                                    <small>✓ File selected successfully</small>
+                                </div>
+
+                                <button type="button" class="remove-file">
+                                    ×
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+
+                            <button type="reset" class="button reset-button">
+                                ↻ Reset
+                            </button>
+
+                            <button type="submit" class="button button-primary upload-submit">
+                                ⇧ Upload Resource
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+                <!-- Right Side Panels -->
+                <aside class="upload-sidebar">
+
+                    <!-- Cover Image Preview -->
+                    <section class="panel side-info-panel">
+
+                        <h2 class="side-panel-heading">
+                            <span>▧</span>
+                            Cover Image Preview
+                        </h2>
+
+                        <div class="cover-preview">
+
+                            <div class="sample-book-cover">
+                                <small>DATA</small>
+                                <strong>STRUCTURES<br>&amp; ALGORITHMS</strong>
+                                <div class="cover-design">⬡</div>
+                            </div>
+
+                        </div>
+
+                        <p>
+                            This image will be used as the cover for your
+                            resource card.
+                        </p>
+
+                    </section>
+
+                    <!-- Supported File Types -->
+                    <section class="panel side-info-panel">
+
+                        <h2 class="side-panel-heading">
+                            <span>▤</span>
+                            Supported File Types
+                        </h2>
+
+                        <ul class="file-type-list">
+
+                            <li>
+                                <span class="type-icon pdf-type">PDF</span>
+                                PDF Documents
+                            </li>
+
+                            <li>
+                                <span class="type-icon word-type">W</span>
+                                Word Documents (DOC, DOCX)
+                            </li>
+
+                            <li>
+                                <span class="type-icon ppt-type">P</span>
+                                PowerPoint Files (PPT, PPTX)
+                            </li>
+
+                            <li>
+                                <span class="type-icon excel-type">X</span>
+                                Excel Files (XLS, XLSX)
+                            </li>
+
+                            <li>
+                                <span class="type-icon zip-type">ZIP</span>
+                                Compressed Files (ZIP)
+                            </li>
+
+                            <li>
+                                <span class="type-icon image-type">IMG</span>
+                                Images (JPG, JPEG, PNG)
+                            </li>
+
+                        </ul>
+
+                        <p class="file-limit">Maximum file size: 20MB</p>
+
+                    </section>
+
+                    <!-- Upload Guidelines -->
+                    <section class="panel side-info-panel">
+
+                        <h2 class="side-panel-heading">
+                            <span>ⓘ</span>
+                            Upload Guidelines
+                        </h2>
+
+                        <ul class="guidelines-list">
+                            <li>✓ Only upload academic content.</li>
+                            <li>✓ Ensure the content is relevant and appropriate.</li>
+                            <li>✓ Do not upload copyrighted material.</li>
+                            <li>✓ Your resource will be reviewed by an admin.</li>
+                            <li>✓ Make sure the file is clear and readable.</li>
+                            <li>✓ Follow the university code of conduct.</li>
+                        </ul>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

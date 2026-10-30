@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browse Resources | Campus Resource Hub</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item active">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report a Resource
+            </a>
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                        <option>Slides</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">K</div>
+
+                    <div>
+                        <strong>Khadim Hussain</strong>
+                        <small>BS Software Engineering</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Browse Page -->
+        <div class="page-content browse-page">
+
+            <section class="browse-heading">
+                <h1>Browse Resources</h1>
+                <p>
+                    Discover and download academic resources shared by your campus community.
+                </p>
+            </section>
+
+            <!-- Filters -->
+            <section class="filter-panel">
+
+                <div class="resource-search">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        placeholder="Search by title, author, or keyword..."
+                    >
+                </div>
+
+                <div class="filter-controls">
+
+                    <div class="filter-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option>All Categories</option>
+                            <option>Books</option>
+                            <option>Lecture Notes</option>
+                            <option>Past Papers</option>
+                            <option>Assignments</option>
+                            <option>Slides</option>
+                            <option>Lab Manuals</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="department">Department</label>
+                        <select id="department">
+                            <option>All Departments</option>
+                            <option>Computer Science</option>
+                            <option>Software Engineering</option>
+                            <option>Electrical Engineering</option>
+                            <option>Mathematics</option>
+                            <option>Business Administration</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="semester">Semester</label>
+                        <select id="semester">
+                            <option>All Semesters</option>
+                            <option>Semester 1</option>
+                            <option>Semester 2</option>
+                            <option>Semester 3</option>
+                            <option>Semester 4</option>
+                            <option>Semester 5</option>
+                            <option>Semester 6</option>
+                            <option>Semester 7</option>
+                            <option>Semester 8</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="sort">Sort By</label>
+                        <select id="sort">
+                            <option>Newest First</option>
+                            <option>Oldest First</option>
+                            <option>Most Downloaded</option>
+                            <option>Title A-Z</option>
+                        </select>
+                    </div>
+
+                    <div class="view-controls">
+                        <button class="view-button active" aria-label="Grid view">▦</button>
+                        <button class="view-button" aria-label="List view">☷</button>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- Results -->
+            <div class="results-heading">
+                <span>Showing <strong>24</strong> results</span>
+            </div>
+
+            <!-- Resource Cards -->
+            <section class="resource-grid">
+
+                <!-- Resource 1 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-dsa">
+                        <div class="cover-decoration">◆ ◆ ◆</div>
+                        <div class="cover-content">
+                            <small>Resource</small>
+                            <h2>Data Structures<br>and Algorithms</h2>
+                            <p>A Modern Approach</p>
+                        </div>
+
+                        <span class="file-label pdf-label">PDF</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Data Structures and Algorithms – Lecture Notes</h3>
+
+                        <div class="tags">
+                            <span>Computer Science</span>
+                            <span>Semester 3</span>
+                            <span>Notes</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Ayesha Khan</span>
+                            <span>▣ Oct 20, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 45 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 2 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-web">
+                        <div class="cover-content">
+                            <small>Department</small>
+                            <h2>WEB<br>ENGINEERING</h2>
+                            <p>Design and Development</p>
+                        </div>
+
+                        <span class="file-label ppt-label">PPT</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Web Engineering – Slides</h3>
+
+                        <div class="tags">
+                            <span>Software Engineering</span>
+                            <span>Semester 5</span>
+                            <span>Slides</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Fatima Ali</span>
+                            <span>▣ Oct 18, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 78 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 3 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-os">
+                        <div class="cover-decoration">⚙</div>
+                        <div class="cover-content">
+                            <small>Reference</small>
+                            <h2>OPERATING<br>SYSTEMS</h2>
+                            <p>Concepts and Design</p>
+                        </div>
+
+                        <span class="file-label pdf-label">PDF</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Operating Systems – Past Papers</h3>
+
+                        <div class="tags">
+                            <span>Software Engineering</span>
+                            <span>Semester 4</span>
+                            <span>Past Papers</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Ali Raza</span>
+                            <span>▣ Oct 15, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 32 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 4 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-database">
+                        <div class="cover-content">
+                            <small>Reference</small>
+                            <h2>Database</h2>
+                            <p>System Concepts</p>
+                        </div>
+
+                        <span class="file-label doc-label">DOC</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Database System – Assignments</h3>
+
+                        <div class="tags">
+                            <span>Computer Science</span>
+                            <span>Semester 3</span>
+                            <span>Assignments</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Sara Memon</span>
+                            <span>▣ Oct 12, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 120 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 5 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-math">
+                        <div class="cover-content">
+                            <small>Mathematics</small>
+                            <h2>DISCRETE<br>MATHEMATICS</h2>
+                            <p>Fundamental Concepts</p>
+                        </div>
+
+                        <span class="file-label pdf-label">PDF</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Discrete Mathematics – Notes</h3>
+
+                        <div class="tags">
+                            <span>Computer Science</span>
+                            <span>Semester 2</span>
+                            <span>Notes</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Usman Qureshi</span>
+                            <span>▣ Oct 10, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 67 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 6 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-network">
+                        <div class="cover-content">
+                            <small>Department</small>
+                            <h2>Computer<br>Networks</h2>
+                            <p>Networking Fundamentals</p>
+                        </div>
+
+                        <span class="file-label pdf-label">PDF</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Computer Networks – Lab Manual</h3>
+
+                        <div class="tags">
+                            <span>Software Engineering</span>
+                            <span>Semester 5</span>
+                            <span>Lab Manual</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Hira Memon</span>
+                            <span>▣ Oct 8, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 54 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 7 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-physics">
+                        <div class="cover-content">
+                            <small>Science</small>
+                            <h2>PHYSICS</h2>
+                            <p>Fundamental Principles</p>
+                        </div>
+
+                        <span class="file-label pdf-label">PDF</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Physics – Past Papers</h3>
+
+                        <div class="tags">
+                            <span>General Science</span>
+                            <span>Semester 1</span>
+                            <span>Past Papers</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Imran Ali</span>
+                            <span>▣ Oct 5, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 89 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+                <!-- Resource 8 -->
+                <article class="resource-card">
+
+                    <div class="resource-cover cover-algebra">
+                        <div class="cover-content">
+                            <small>Mathematics</small>
+                            <h2>Linear<br>Algebra</h2>
+                            <p>Lecture Materials</p>
+                        </div>
+
+                        <span class="file-label ppt-label">PPT</span>
+                        <button class="bookmark-button" aria-label="Bookmark resource">♧</button>
+                    </div>
+
+                    <div class="resource-card-body">
+                        <h3>Linear Algebra – Lecture Slides</h3>
+
+                        <div class="tags">
+                            <span>Mathematics</span>
+                            <span>Semester 1</span>
+                            <span>Slides</span>
+                        </div>
+
+                        <div class="resource-meta">
+                            <span>♙ Zainab Shah</span>
+                            <span>▣ Oct 3, 2026</span>
+                        </div>
+
+                        <div class="resource-footer">
+                            <span>↓ 41 downloads</span>
+                        </div>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Pagination -->
+            <nav class="pagination" aria-label="Resource pages">
+                <a href="#" class="page-arrow">‹</a>
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+                <a href="#" class="page-number">4</a>
+                <a href="#" class="page-number">5</a>
+                <a href="#" class="page-arrow">›</a>
+            </nav>
+
+        </div>
+    </main>
+</div>
+
+</body>
+</html>

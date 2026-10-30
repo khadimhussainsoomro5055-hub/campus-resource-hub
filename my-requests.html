@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Requests | Campus Resource Hub</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="upload-resource.html" class="nav-item">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="my-uploads.html" class="nav-item">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="physical-books.html" class="nav-item">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="my-requests.html" class="nav-item active">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report a Resource
+            </a>
+
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">K</div>
+
+                    <div>
+                        <strong>Khadim Hussain</strong>
+                        <small>BS Software Engineering</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Page Content -->
+        <div class="page-content my-requests-page">
+
+            <!-- Heading -->
+            <section class="requests-heading">
+
+                <h1>My Requests</h1>
+
+                <p>
+                    Track the status of your book borrowing requests and
+                    manage your interactions with book owners.
+                </p>
+
+            </section>
+
+            <!-- Status Tabs and Search -->
+            <section class="request-toolbar">
+
+                <div class="request-tabs">
+
+                    <button class="request-tab active">
+                        All Requests <span>(8)</span>
+                    </button>
+
+                    <button class="request-tab">
+                        <span class="tab-icon pending-icon">◷</span>
+                        Pending <span>(2)</span>
+                    </button>
+
+                    <button class="request-tab">
+                        <span class="tab-icon approved-icon">●</span>
+                        Approved <span>(2)</span>
+                    </button>
+
+                    <button class="request-tab">
+                        <span class="tab-icon rejected-icon">×</span>
+                        Rejected <span>(1)</span>
+                    </button>
+
+                    <button class="request-tab">
+                        <span class="tab-icon completed-icon">↶</span>
+                        Completed <span>(2)</span>
+                    </button>
+
+                </div>
+
+                <div class="request-search">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        placeholder="Search your requests..."
+                    >
+                </div>
+
+            </section>
+
+            <!-- Request List -->
+            <section class="request-list">
+
+                <!-- Request 1: Pending -->
+                <article class="request-card">
+
+                    <div class="request-book">
+
+                        <div class="request-cover cover-os">
+                            <small>Reference</small>
+                            <strong>OPERATING<br>SYSTEMS</strong>
+                            <span>⚙</span>
+                        </div>
+
+                        <div class="request-book-info">
+
+                            <h3>Operating System Concepts</h3>
+
+                            <div class="request-meta">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▰</span> Semester 4
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▧</span> Physical Book
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="request-owner">
+
+                        <div class="owner-name">
+                            <div class="owner-avatar">U</div>
+                            <strong>Usman Bhatti</strong>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖</span> On-campus (CS Block)
+                        </div>
+
+                        <div class="request-meta">
+                            <span>▣</span> Oct 15, 2026
+                        </div>
+
+                    </div>
+
+                    <div class="request-status-area">
+
+                        <span class="request-status pending-status">
+                            <span>◷</span> Pending
+                        </span>
+
+                        <p>
+                            Your request is sent. Waiting for the owner's response.
+                        </p>
+
+                    </div>
+
+                    <div class="request-actions">
+
+                        <a href="#" class="request-view-button">
+                            View Details
+                        </a>
+
+                        <a href="#" class="request-cancel-button">
+                            ♜ Cancel Request
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Request 2: Approved -->
+                <article class="request-card">
+
+                    <div class="request-book">
+
+                        <div class="request-cover cover-algebra">
+                            <small>Introduction to</small>
+                            <strong>Linear<br>Algebra</strong>
+                            <span>◆</span>
+                        </div>
+
+                        <div class="request-book-info">
+
+                            <h3>Linear Algebra</h3>
+
+                            <div class="request-meta">
+                                <span>▤</span> Mathematics
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▰</span> Semester 1
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▧</span> Physical Book
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="request-owner">
+
+                        <div class="owner-name">
+                            <div class="owner-avatar">F</div>
+                            <strong>Fatima Ali</strong>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖</span> On-campus (Hostel B)
+                        </div>
+
+                        <div class="request-meta">
+                            <span>▣</span> Oct 8, 2026
+                        </div>
+
+                    </div>
+
+                    <div class="request-status-area">
+
+                        <span class="request-status approved-status">
+                            <span>✓</span> Approved
+                        </span>
+
+                        <p>
+                            Your request is approved. Contact the owner to
+                            arrange pickup.
+                        </p>
+
+                    </div>
+
+                    <div class="request-actions">
+
+                        <a href="#" class="request-view-button">
+                            View Details
+                        </a>
+
+                        <a href="#" class="request-received-button">
+                            ▤ Mark as Received
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Request 3: Rejected -->
+                <article class="request-card">
+
+                    <div class="request-book">
+
+                        <div class="request-cover cover-database">
+                            <small>Reference</small>
+                            <strong>Database<br>System<br>Concepts</strong>
+                            <span>▤</span>
+                        </div>
+
+                        <div class="request-book-info">
+
+                            <h3>Database System Concepts</h3>
+
+                            <div class="request-meta">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▰</span> Semester 3
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▧</span> Physical Book
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="request-owner">
+
+                        <div class="owner-name">
+                            <div class="owner-avatar">H</div>
+                            <strong>Hira Memon</strong>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖</span> On-campus (CS Block)
+                        </div>
+
+                        <div class="request-meta">
+                            <span>▣</span> Oct 1, 2026
+                        </div>
+
+                    </div>
+
+                    <div class="request-status-area">
+
+                        <span class="request-status rejected-status">
+                            <span>×</span> Rejected
+                        </span>
+
+                        <p>
+                            Your request was rejected by the owner.
+                        </p>
+
+                    </div>
+
+                    <div class="request-actions">
+
+                        <a href="#" class="request-view-button">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Request 4: Returned -->
+                <article class="request-card">
+
+                    <div class="request-book">
+
+                        <div class="request-cover cover-physics">
+                            <small>Science</small>
+                            <strong>PHYSICS</strong>
+                            <span>◎</span>
+                        </div>
+
+                        <div class="request-book-info">
+
+                            <h3>University Physics</h3>
+
+                            <div class="request-meta">
+                                <span>▤</span> Physics
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▰</span> Semester 2
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▧</span> Physical Book
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="request-owner">
+
+                        <div class="owner-name">
+                            <div class="owner-avatar">I</div>
+                            <strong>Imran Ali</strong>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖</span> On-campus (Science Block)
+                        </div>
+
+                        <div class="request-meta">
+                            <span>▣</span> Sep 25, 2026
+                        </div>
+
+                    </div>
+
+                    <div class="request-status-area">
+
+                        <span class="request-status returned-status">
+                            <span>↶</span> Returned
+                        </span>
+
+                        <p>
+                            You have returned this book. Thank you!
+                        </p>
+
+                    </div>
+
+                    <div class="request-actions">
+
+                        <a href="#" class="request-view-button">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Request 5: Completed -->
+                <article class="request-card">
+
+                    <div class="request-book">
+
+                        <div class="request-cover cover-chemistry">
+                            <small>Reference</small>
+                            <strong>Organic<br>Chemistry</strong>
+                            <span>●</span>
+                        </div>
+
+                        <div class="request-book-info">
+
+                            <h3>Organic Chemistry</h3>
+
+                            <div class="request-meta">
+                                <span>▤</span> Chemistry
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▰</span> Semester 4
+                            </div>
+
+                            <div class="request-meta">
+                                <span>▧</span> Physical Book
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="request-owner">
+
+                        <div class="owner-name">
+                            <div class="owner-avatar">S</div>
+                            <strong>Sara Memon</strong>
+                        </div>
+
+                        <div class="request-meta">
+                            <span>⌖</span> On-campus (Hostel A)
+                        </div>
+
+                        <div class="request-meta">
+                            <span>▣</span> Sep 10, 2026
+                        </div>
+
+                    </div>
+
+                    <div class="request-status-area">
+
+                        <span class="request-status completed-status">
+                            <span>✓</span> Completed
+                        </span>
+
+                        <p>
+                            You have received and returned this book.
+                        </p>
+
+                    </div>
+
+                    <div class="request-actions">
+
+                        <a href="#" class="request-view-button">
+                            View Details
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Pagination -->
+            <nav class="requests-pagination">
+
+                <a href="#" class="requests-page-arrow">‹</a>
+                <a href="#" class="requests-page-number active">1</a>
+                <a href="#" class="requests-page-number">2</a>
+                <a href="#" class="requests-page-arrow">›</a>
+
+            </nav>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

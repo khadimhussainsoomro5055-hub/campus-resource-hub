@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Uploads | Campus Resource Hub</title>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="upload-resource.html" class="nav-item">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="my-uploads.html" class="nav-item active">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report a Resource
+            </a>
+
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">K</div>
+
+                    <div>
+                        <strong>Khadim Hussain</strong>
+                        <small>BS Software Engineering</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Page Content -->
+        <div class="page-content my-uploads-page">
+
+            <!-- Page Heading -->
+            <section class="my-uploads-heading">
+
+                <h1>My Uploads</h1>
+
+                <p>
+                    Manage the resources you have uploaded.
+                    You can view their status and take actions if needed.
+                </p>
+
+            </section>
+
+            <!-- Filters -->
+            <section class="uploads-filters">
+
+                <div class="uploads-search">
+                    <span>⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search in your uploads..."
+                    >
+                </div>
+
+                <select>
+                    <option>All Categories</option>
+                    <option>Books</option>
+                    <option>Notes</option>
+                    <option>Past Papers</option>
+                    <option>Assignments</option>
+                    <option>Slides</option>
+                    <option>Lab Manuals</option>
+                </select>
+
+                <select>
+                    <option>All Status</option>
+                    <option>Pending</option>
+                    <option>Approved</option>
+                    <option>Rejected</option>
+                </select>
+
+                <select>
+                    <option>Newest First</option>
+                    <option>Oldest First</option>
+                    <option>Title A-Z</option>
+                </select>
+
+            </section>
+
+            <!-- Results -->
+            <div class="uploads-results">
+                Showing <strong>8</strong> results
+            </div>
+
+            <!-- Upload Cards -->
+            <section class="my-uploads-grid">
+
+                <!-- Card 1 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-dsa">
+                            <small>DATA</small>
+                            <strong>STRUCTURES<br>AND ALGORITHMS</strong>
+                            <span>◆</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge pending">
+                                Pending
+                            </span>
+
+                            <h3>Data Structures and Algorithms – Notes</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 3
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 20, 2026
+                            </div>
+
+                            <span class="upload-category">Lecture Notes</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 2 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-web">
+                            <small>Department</small>
+                            <strong>WEB<br>ENGINEERING</strong>
+                            <span>▣</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge approved">
+                                Approved
+                            </span>
+
+                            <h3>Web Engineering – Slides</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Software Engineering
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 5
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 18, 2026
+                            </div>
+
+                            <span class="upload-category">Slides</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 3 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-os">
+                            <small>Reference</small>
+                            <strong>OPERATING<br>SYSTEMS</strong>
+                            <span>⚙</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge rejected">
+                                Rejected
+                            </span>
+
+                            <h3>Operating Systems – Past Papers</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Software Engineering
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 4
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 15, 2026
+                            </div>
+
+                            <span class="upload-category">Past Papers</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 4 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-database">
+                            <small>Reference</small>
+                            <strong>Database</strong>
+                            <span>System Concepts</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge approved">
+                                Approved
+                            </span>
+
+                            <h3>Database System – Assignments</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 3
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 12, 2026
+                            </div>
+
+                            <span class="upload-category">Assignments</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 5 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-math">
+                            <small>Mathematics</small>
+                            <strong>DISCRETE<br>MATHEMATICS</strong>
+                            <span>◆ ◆</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge pending">
+                                Pending
+                            </span>
+
+                            <h3>Discrete Mathematics – Notes</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 2
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 10, 2026
+                            </div>
+
+                            <span class="upload-category">Notes</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 6 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-network">
+                            <small>Department</small>
+                            <strong>Computer<br>Networks</strong>
+                            <span>◉</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge approved">
+                                Approved
+                            </span>
+
+                            <h3>Computer Networks – Lab Manual</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Computer Science
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 5
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 8, 2026
+                            </div>
+
+                            <span class="upload-category">Lab Manual</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 7 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-physics">
+                            <small>Science</small>
+                            <strong>PHYSICS</strong>
+                            <span>◎</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge rejected">
+                                Rejected
+                            </span>
+
+                            <h3>Physics – Diagrams</h3>
+
+                            <div class="upload-detail">
+                                <span>♙</span> General Science
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 1
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 5, 2026
+                            </div>
+
+                            <span class="upload-category">Images</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+                <!-- Card 8 -->
+                <article class="my-upload-card">
+
+                    <div class="my-upload-main">
+
+                        <div class="upload-cover cover-algebra">
+                            <small>Mathematics</small>
+                            <strong>Linear<br>Algebra</strong>
+                            <span>◆</span>
+                        </div>
+
+                        <div class="my-upload-details">
+
+                            <span class="status-badge approved">
+                                Approved
+                            </span>
+
+                            <h3>Linear Algebra – Handwritten Notes</h3>
+
+                            <div class="upload-detail">
+                                <span>▤</span> Mathematics
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>♙</span> Semester 1
+                            </div>
+
+                            <div class="upload-detail">
+                                <span>▣</span> Oct 3, 2026
+                            </div>
+
+                            <span class="upload-category">Images</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="upload-card-actions">
+                        <a href="#">◉ View</a>
+                        <a href="#">✎ Edit</a>
+                        <a href="#" class="delete-action">♜ Delete</a>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <!-- Pagination -->
+            <nav class="uploads-pagination">
+
+                <a href="#" class="pagination-arrow">‹</a>
+                <a href="#" class="pagination-number active">1</a>
+                <a href="#" class="pagination-number">2</a>
+                <a href="#" class="pagination-arrow">›</a>
+
+            </nav>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>

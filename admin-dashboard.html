@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Dashboard | Campus Resource Hub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- Admin Sidebar -->
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <div class="brand-mark">◆</div>
+            <div class="brand-copy">
+                <strong>Campus<br>Resource Hub</strong>
+                <small>Sukkur IBA University</small>
+            </div>
+        </a>
+
+        <nav class="main-nav">
+
+            <a href="index.html" class="nav-item">
+                <span>⌂</span> Dashboard
+            </a>
+
+            <a href="browse-resources.html" class="nav-item">
+                <span>▤</span> Browse Resources
+            </a>
+
+            <a href="upload-resource.html" class="nav-item">
+                <span>⇧</span> Upload Resource
+            </a>
+
+            <a href="my-uploads.html" class="nav-item">
+                <span>▧</span> My Uploads
+            </a>
+
+            <a href="physical-books.html" class="nav-item">
+                <span>▤</span> Physical Books
+            </a>
+
+            <a href="my-requests.html" class="nav-item">
+                <span>▣</span> My Requests
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>⚑</span> Report Content
+            </a>
+
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="admin-nav">
+
+            <a href="admin-dashboard.html" class="nav-item active">
+                <span>⬡</span> Admin Panel
+            </a>
+
+            <a href="manage-users.html" class="nav-item">
+                <span>♧</span> Manage Users
+            </a>
+
+            <a href="manage-categories.html" class="nav-item">
+                <span>▦</span> Manage Categories
+            </a>
+
+            <a href="admin-reports.html" class="nav-item">
+                <span>▥</span> Reports
+            </a>
+
+        </nav>
+
+        <div class="nav-divider"></div>
+
+        <nav class="secondary-nav">
+
+            <a href="#" class="nav-item">
+                <span>⚙</span> Settings
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>ⓘ</span> Help &amp; Support
+            </a>
+
+        </nav>
+
+        <div class="sidebar-university">
+            <div class="university-building">🏛</div>
+            <strong>Sukkur IBA University</strong>
+            <span>Knowledge · Sharing · Community</span>
+        </div>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div class="search-area">
+
+                <div class="search-box">
+                    <span class="search-icon">⌕</span>
+
+                    <input
+                        type="search"
+                        placeholder="Search for books, notes, past papers, assignments..."
+                    >
+
+                    <select>
+                        <option>All Categories</option>
+                        <option>Books</option>
+                        <option>Notes</option>
+                        <option>Past Papers</option>
+                        <option>Assignments</option>
+                    </select>
+                </div>
+
+                <button class="button button-primary search-button">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="topbar-actions">
+
+                <button class="notification">
+                    ♧
+                    <span>3</span>
+                </button>
+
+                <div class="user-summary">
+                    <div class="avatar">A</div>
+
+                    <div>
+                        <strong>Admin</strong>
+                        <small>Administrator</small>
+                    </div>
+
+                    <span class="chevron">⌄</span>
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Admin Dashboard -->
+        <div class="page-content admin-dashboard-page">
+
+            <!-- Heading -->
+            <section class="admin-heading">
+                <h1>Admin Dashboard</h1>
+                <p>Review and manage resources, users, and reports.</p>
+            </section>
+
+            <!-- Statistics -->
+            <section class="admin-stats-grid">
+
+                <article class="admin-stat-card pending-stat">
+                    <div class="stat-icon">◷</div>
+                    <div>
+                        <strong>24</strong>
+                        <span>Pending Resources</span>
+                    </div>
+                </article>
+
+                <article class="admin-stat-card approved-stat">
+                    <div class="stat-icon">✓</div>
+                    <div>
+                        <strong>156</strong>
+                        <span>Approved Resources</span>
+                    </div>
+                </article>
+
+                <article class="admin-stat-card rejected-stat">
+                    <div class="stat-icon">×</div>
+                    <div>
+                        <strong>12</strong>
+                        <span>Rejected Resources</span>
+                    </div>
+                </article>
+
+                <article class="admin-stat-card users-stat">
+                    <div class="stat-icon">♧</div>
+                    <div>
+                        <strong>328</strong>
+                        <span>Registered Users</span>
+                    </div>
+                </article>
+
+            </section>
+
+            <!-- Admin Tabs -->
+            <nav class="admin-tabs">
+
+                <a href="#pending-resources" class="admin-tab active">
+                    <span>◷</span> Pending Resources
+                </a>
+
+                <a href="#all-resources" class="admin-tab">
+                    <span>▤</span> All Resources
+                </a>
+
+                <a href="manage-users.html" class="admin-tab">
+                    <span>♧</span> Users
+                </a>
+
+                <a href="physical-books.html" class="admin-tab">
+                    <span>▤</span> Physical Books
+                </a>
+
+                <a href="admin-reports.html" class="admin-tab">
+                    <span>▥</span> Reports
+                </a>
+
+            </nav>
+
+            <!-- Pending Resources Panel -->
+            <section class="panel pending-resources-panel" id="pending-resources">
+
+                <div class="pending-panel-header">
+
+                    <div>
+                        <h2>Pending Resources</h2>
+                        <p>Review and approve or reject the uploaded resources.</p>
+                    </div>
+
+                    <div class="pending-filters">
+
+                        <div class="admin-search">
+                            <span>⌕</span>
+                            <input
+                                type="search"
+                                placeholder="Search resources..."
+                            >
+                        </div>
+
+                        <select>
+                            <option>All Categories</option>
+                            <option>Documents</option>
+                            <option>Presentations</option>
+                            <option>Images</option>
+                            <option>Compressed</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <!-- Resources Table -->
+                <div class="admin-table-wrapper">
+
+                    <table class="admin-resources-table">
+
+                        <thead>
+                            <tr>
+                                <th>
+                                    <input type="checkbox" aria-label="Select all resources">
+                                </th>
+                                <th>Resource</th>
+                                <th>Type</th>
+                                <th>Uploaded By</th>
+                                <th>Department</th>
+                                <th>Semester</th>
+                                <th>Date</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" aria-label="Select Data Structures resource">
+                                </td>
+
+                                <td>
+                                    <div class="admin-resource-cell">
+                                        <div class="admin-resource-cover cover-dsa">
+                                            <strong>DSA</strong>
+                                        </div>
+
+                                        <div>
+                                            <strong>Data Structures Notes.pdf</strong>
+                                            <small>2.4 MB</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="resource-type document-type">▤ Document</span>
+                                </td>
+
+                                <td>
+                                    <strong>Ali Raza</strong>
+                                    <small>ali.raza@iba.edu.pk</small>
+                                </td>
+
+                                <td>Computer Science</td>
+                                <td>3</td>
+                                <td>Oct 15, 2026</td>
+
+                                <td>
+                                    <div class="admin-action-buttons">
+                                        <button class="approve-action" title="Approve">✓</button>
+                                        <button class="reject-action" title="Reject">×</button>
+                                        <button class="view-action" title="View">◉</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" aria-label="Select Operating System resource">
+                                </td>
+
+                                <td>
+                                    <div class="admin-resource-cell">
+                                        <div class="admin-resource-cover cover-os">
+                                            <strong>OS</strong>
+                                        </div>
+
+                                        <div>
+                                            <strong>Operating System Slides.pptx</strong>
+                                            <small>4.1 MB</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="resource-type presentation-type">▤ Presentation</span>
+                                </td>
+
+                                <td>
+                                    <strong>Fatima Ali</strong>
+                                    <small>fatima.ali@iba.edu.pk</small>
+                                </td>
+
+                                <td>Software Engineering</td>
+                                <td>4</td>
+                                <td>Oct 14, 2026</td>
+
+                                <td>
+                                    <div class="admin-action-buttons">
+                                        <button class="approve-action" title="Approve">✓</button>
+                                        <button class="reject-action" title="Reject">×</button>
+                                        <button class="view-action" title="View">◉</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" aria-label="Select Linear Algebra resource">
+                                </td>
+
+                                <td>
+                                    <div class="admin-resource-cell">
+                                        <div class="admin-resource-cover cover-algebra">
+                                            <strong>LA</strong>
+                                        </div>
+
+                                        <div>
+                                            <strong>Linear Algebra Notes.pdf</strong>
+                                            <small>1.8 MB</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="resource-type document-type">▤ Document</span>
+                                </td>
+
+                                <td>
+                                    <strong>Usman Bhatti</strong>
+                                    <small>usman.bhatti@iba.edu.pk</small>
+                                </td>
+
+                                <td>Mathematics</td>
+                                <td>1</td>
+                                <td>Oct 13, 2026</td>
+
+                                <td>
+                                    <div class="admin-action-buttons">
+                                        <button class="approve-action" title="Approve">✓</button>
+                                        <button class="reject-action" title="Reject">×</button>
+                                        <button class="view-action" title="View">◉</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" aria-label="Select Database resource">
+                                </td>
+
+                                <td>
+                                    <div class="admin-resource-cell">
+                                        <div class="admin-resource-cover cover-database">
+                                            <strong>DB</strong>
+                                        </div>
+
+                                        <div>
+                                            <strong>Database Concepts Images.zip</strong>
+                                            <small>8.5 MB</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="resource-type compressed-type">▤ Compressed</span>
+                                </td>
+
+                                <td>
+                                    <strong>Hira Memon</strong>
+                                    <small>hira.memon@iba.edu.pk</small>
+                                </td>
+
+                                <td>Computer Science</td>
+                                <td>3</td>
+                                <td>Oct 12, 2026</td>
+
+                                <td>
+                                    <div class="admin-action-buttons">
+                                        <button class="approve-action" title="Approve">✓</button>
+                                        <button class="reject-action" title="Reject">×</button>
+                                        <button class="view-action" title="View">◉</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr>
+                                <td>
+                                    <input type="checkbox" aria-label="Select Physics resource">
+                                </td>
+
+                                <td>
+                                    <div class="admin-resource-cell">
+                                        <div class="admin-resource-cover cover-physics">
+                                            <strong>PHY</strong>
+                                        </div>
+
+                                        <div>
+                                            <strong>Physics Diagrams (Images)</strong>
+                                            <small>5.2 MB</small>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="resource-type image-type">▧ Image</span>
+                                </td>
+
+                                <td>
+                                    <strong>Imran Ali</strong>
+                                    <small>imran.ali@iba.edu.pk</small>
+                                </td>
+
+                                <td>Physics</td>
+                                <td>2</td>
+                                <td>Oct 11, 2026</td>
+
+                                <td>
+                                    <div class="admin-action-buttons">
+                                        <button class="approve-action" title="Approve">✓</button>
+                                        <button class="reject-action" title="Reject">×</button>
+                                        <button class="view-action" title="View">◉</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <!-- Table Footer -->
+                <div class="admin-table-footer">
+
+                    <p>Showing 5 of 24 pending resources</p>
+
+                    <nav class="admin-pagination">
+                        <a href="#">‹</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">›</a>
+                    </nav>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+</div>
+
+</body>
+</html>
